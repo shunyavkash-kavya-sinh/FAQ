@@ -17,85 +17,492 @@
 <body>
     <section class="faq-sec">
         <div class="container">
-            <div class="faq-block">
-                <h1 class="faq-title"><span class="text-blue">F</span>requently <span class="text-blue">A</span>sked
-                    <span class="text-blue">Q</span>uestions</h1>
-                <div class="faq-wrap faq-item active">
-                    <div class="faq-content-title faq-question">
-                        <div class="plus-img">
-                            <img src="assests/images/icons/plus.svg" alt="plus-icone">
+            <h1 class="faq-title"><span class="text-blue">F</span>requently <span class="text-blue">A</span>sked
+                <span class="text-blue">Q</span>uestions
+            </h1>
+            <div class="main-faq-wrap">
+                <div class="faq-tab-sec">
+                    <ul>
+                        <li>
+                            <a href="#General" onclick="showSection('General')">General Questions</a>
+                        </li>
+                        <li>
+                            <a href="#Pricing" onclick="showSection('Pricing')">Pricing & Plans</a>
+                        </li>
+                        <li>
+                            <a href="#Product" onclick="showSection('Product')">Using the Product / How It Works</a>
+                        </li>
+                        <li>
+                            <a href="#Account" onclick="showSection('Account')">Account & Login Help</a>
+                        </li>
+                        <li>
+                            <a href="#Delivery" onclick="showSection('Delivery')">Orders & Delivery</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="faq-block">
+                    <form>
+                        <div class="input-search-box">
+                            <input type="search" id="searchBar" class="search-input">
                         </div>
-                        <h2 class="faq-text">How to transaction fees work?</h2>
+                    </form>
+                    <div class="tab-faq active-tab" id="General">
+                        <h2 class="faq-tab-title">General Questions</h2>
+                        <div class="faq-wrap faq-item">
+                            <div class="faq-content-title faq-question">
+                                <div class="plus-img">
+                                    <img src="assests/images/icons/plus.svg" alt="plus-icone">
+                                </div>
+                                <h2 class="faq-text">How to transaction fees work?</h2>
+                            </div>
+                            <div class="faq-content faq-answer">
+                                <div class="richtext">
+                                    <p>
+                                        MemberStack charges a flat transaction fee of 10% on the Startup plan and 3% on
+                                        the
+                                        Pro
+                                        plan, and 1% on the Scale plan.
+                                        Stripe charges an additional credit card processing fee that depends on a few
+                                        different
+                                        factors. See Stripe's pricing
+                                        for more details.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-wrap faq-item">
+                            <div class="faq-content-title faq-question">
+                                <div class="plus-img">
+                                    <img src="assests/images/icons/plus.svg" alt="plus-icone">
+                                </div>
+                                <h2 class="faq-text">What can I protect with MemberStack?</h2>
+                            </div>
+                            <div class="faq-content faq-answer">
+                                <div class="richtext">
+                                    <p>
+                                        We’re working on a content management system that would make it possible to
+                                        store
+                                        anything securely on any website.
+                                        Although, it’ll be a few months before something like this is ready (01/2019).
+                                        Until
+                                        then, MemberStack protects pages
+                                        and content on those pages using redirects. They can't be "turned off" from a
+                                        browser,
+                                        but there are ways to access the
+                                        HTML of a page if you know what you're looking for, and what you're doing.
+                                        Therefor,
+                                        we
+                                        don't recommend using
+                                        MemberStack to protect highly sensitive information.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-wrap faq-item">
+                            <div class="faq-content-title faq-question">
+                                <div class="plus-img">
+                                    <img src="assests/images/icons/plus.svg" alt="plus-icone">
+                                </div>
+                                <h2 class="faq-text">Who should apply for the Startup Plan?</h2>
+                            </div>
+                            <div class="faq-content faq-answer">
+                                <div class="richtext">
+                                    <p>
+                                        Pre-revenue companies, students, and other folks who can't (yet) afford the
+                                        $25/mo
+                                        fee.
+                                        We've been there, so we're happy
+                                        to work with you.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-wrap faq-item">
+                            <div class="faq-content-title faq-question">
+                                <div class="plus-img">
+                                    <img src="assests/images/icons/plus.svg" alt="plus-icone">
+                                </div>
+                                <h2 class="faq-text">Is there someone I can talk to about my project?</h2>
+                            </div>
+                            <div class="faq-content faq-answer">
+                                <div class="richtext">
+                                    <p>
+                                        Absolutely! You can reach us via he chat widget in the bottom right corner, or
+                                        by
+                                        email.
+                                        Try team@memberstack.io. We're
+                                        happy to help!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="faq-content faq-answer">
-                        <div class="richtext">
-                            <p>
-                                MemberStack charges a flat transaction fee of 10% on the Startup plan and 3% on the Pro
-                                plan, and 1% on the Scale plan.
-                                Stripe charges an additional credit card processing fee that depends on a few different
-                                factors. See Stripe's pricing
-                                for more details.
-                            </p>
+                    <div class="tab-faq" id="Pricing">
+                        <h2 class="faq-tab-title">Pricing & Plans</h2>
+                        <div class="faq-wrap faq-item">
+                            <div class="faq-content-title faq-question">
+                                <div class="plus-img">
+                                    <img src="assests/images/icons/plus.svg" alt="plus-icone">
+                                </div>
+                                <h2 class="faq-text">What’s included in each plan?</h2>
+                            </div>
+                            <div class="faq-content faq-answer">
+                                <div class="richtext">
+                                    <p>
+                                        MemberStack charges a flat transaction fee of 10% on the Startup plan and 3% on
+                                        the
+                                        Pro
+                                        plan, and 1% on the Scale plan.
+                                        Stripe charges an additional credit card processing fee that depends on a few
+                                        different
+                                        factors. See Stripe's pricing
+                                        for more details.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-wrap faq-item">
+                            <div class="faq-content-title faq-question">
+                                <div class="plus-img">
+                                    <img src="assests/images/icons/plus.svg" alt="plus-icone">
+                                </div>
+                                <h2 class="faq-text">How does billing work?</h2>
+                            </div>
+                            <div class="faq-content faq-answer">
+                                <div class="richtext">
+                                    <p>
+                                        We’re working on a content management system that would make it possible to
+                                        store
+                                        anything securely on any website.
+                                        Although, it’ll be a few months before something like this is ready (01/2019).
+                                        Until
+                                        then, MemberStack protects pages
+                                        and content on those pages using redirects. They can't be "turned off" from a
+                                        browser,
+                                        but there are ways to access the
+                                        HTML of a page if you know what you're looking for, and what you're doing.
+                                        Therefor,
+                                        we
+                                        don't recommend using
+                                        MemberStack to protect highly sensitive information.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-wrap faq-item">
+                            <div class="faq-content-title faq-question">
+                                <div class="plus-img">
+                                    <img src="assests/images/icons/plus.svg" alt="plus-icone">
+                                </div>
+                                <h2 class="faq-text">Do you offer any free plan or trial ?</h2>
+                            </div>
+                            <div class="faq-content faq-answer">
+                                <div class="richtext">
+                                    <p>
+                                        Pre-revenue companies, students, and other folks who can't (yet) afford the
+                                        $25/mo
+                                        fee.
+                                        We've been there, so we're happy
+                                        to work with you.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-wrap faq-item">
+                            <div class="faq-content-title faq-question">
+                                <div class="plus-img">
+                                    <img src="assests/images/icons/plus.svg" alt="plus-icone">
+                                </div>
+                                <h2 class="faq-text">Can I upgrade/downgrade anytime ?</h2>
+                            </div>
+                            <div class="faq-content faq-answer">
+                                <div class="richtext">
+                                    <p>
+                                        Absolutely! You can reach us via he chat widget in the bottom right corner, or
+                                        by
+                                        email.
+                                        Try team@memberstack.io. We're
+                                        happy to help!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-faq" id="Product">
+                        <h2 class="faq-tab-title">How do I set up my account or product?</h2>
+                        <div class="faq-wrap faq-item">
+                            <div class="faq-content-title faq-question">
+                                <div class="plus-img">
+                                    <img src="assests/images/icons/plus.svg" alt="plus-icone">
+                                </div>
+                                <h2 class="faq-text">How to transaction fees work?</h2>
+                            </div>
+                            <div class="faq-content faq-answer">
+                                <div class="richtext">
+                                    <p>
+                                        MemberStack charges a flat transaction fee of 10% on the Startup plan and 3% on
+                                        the
+                                        Pro
+                                        plan, and 1% on the Scale plan.
+                                        Stripe charges an additional credit card processing fee that depends on a few
+                                        different
+                                        factors. See Stripe's pricing
+                                        for more details.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-wrap faq-item">
+                            <div class="faq-content-title faq-question">
+                                <div class="plus-img">
+                                    <img src="assests/images/icons/plus.svg" alt="plus-icone">
+                                </div>
+                                <h2 class="faq-text">What are the key features and how to use them?</h2>
+                            </div>
+                            <div class="faq-content faq-answer">
+                                <div class="richtext">
+                                    <p>
+                                        We’re working on a content management system that would make it possible to
+                                        store
+                                        anything securely on any website.
+                                        Although, it’ll be a few months before something like this is ready (01/2019).
+                                        Until
+                                        then, MemberStack protects pages
+                                        and content on those pages using redirects. They can't be "turned off" from a
+                                        browser,
+                                        but there are ways to access the
+                                        HTML of a page if you know what you're looking for, and what you're doing.
+                                        Therefor,
+                                        we
+                                        don't recommend using
+                                        MemberStack to protect highly sensitive information.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-wrap faq-item">
+                            <div class="faq-content-title faq-question">
+                                <div class="plus-img">
+                                    <img src="assests/images/icons/plus.svg" alt="plus-icone">
+                                </div>
+                                <h2 class="faq-text">Is it available on mobile or desktop apps?</h2>
+                            </div>
+                            <div class="faq-content faq-answer">
+                                <div class="richtext">
+                                    <p>
+                                        Pre-revenue companies, students, and other folks who can't (yet) afford the
+                                        $25/mo
+                                        fee.
+                                        We've been there, so we're happy
+                                        to work with you.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-wrap faq-item">
+                            <div class="faq-content-title faq-question">
+                                <div class="plus-img">
+                                    <img src="assests/images/icons/plus.svg" alt="plus-icone">
+                                </div>
+                                <h2 class="faq-text">Do you offer tutorials or training resources?</h2>
+                            </div>
+                            <div class="faq-content faq-answer">
+                                <div class="richtext">
+                                    <p>
+                                        Absolutely! You can reach us via he chat widget in the bottom right corner, or
+                                        by
+                                        email.
+                                        Try team@memberstack.io. We're
+                                        happy to help!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-faq" id="Account">
+                        <h2 class="faq-tab-title">Account & Login Help</h2>
+                        <div class="faq-wrap faq-item active">
+                            <div class="faq-content-title faq-question">
+                                <div class="plus-img">
+                                    <img src="assests/images/icons/plus.svg" alt="plus-icone">
+                                </div>
+                                <h2 class="faq-text">How do I create a new account?</h2>
+                            </div>
+                            <div class="faq-content faq-answer">
+                                <div class="richtext">
+                                    <p>
+                                        MemberStack charges a flat transaction fee of 10% on the Startup plan and 3% on
+                                        the
+                                        Pro
+                                        plan, and 1% on the Scale plan.
+                                        Stripe charges an additional credit card processing fee that depends on a few
+                                        different
+                                        factors. See Stripe's pricing
+                                        for more details.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-wrap faq-item">
+                            <div class="faq-content-title faq-question">
+                                <div class="plus-img">
+                                    <img src="assests/images/icons/plus.svg" alt="plus-icone">
+                                </div>
+                                <h2 class="faq-text">I forgot my password — how can I reset it?</h2>
+                            </div>
+                            <div class="faq-content faq-answer">
+                                <div class="richtext">
+                                    <p>
+                                        We’re working on a content management system that would make it possible to
+                                        store
+                                        anything securely on any website.
+                                        Although, it’ll be a few months before something like this is ready (01/2019).
+                                        Until
+                                        then, MemberStack protects pages
+                                        and content on those pages using redirects. They can't be "turned off" from a
+                                        browser,
+                                        but there are ways to access the
+                                        HTML of a page if you know what you're looking for, and what you're doing.
+                                        Therefor,
+                                        we
+                                        don't recommend using
+                                        MemberStack to protect highly sensitive information.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-wrap faq-item">
+                            <div class="faq-content-title faq-question">
+                                <div class="plus-img">
+                                    <img src="assests/images/icons/plus.svg" alt="plus-icone">
+                                </div>
+                                <h2 class="faq-text">Why can’t I log in to my account?</h2>
+                            </div>
+                            <div class="faq-content faq-answer">
+                                <div class="richtext">
+                                    <p>
+                                        Pre-revenue companies, students, and other folks who can't (yet) afford the
+                                        $25/mo
+                                        fee.
+                                        We've been there, so we're happy
+                                        to work with you.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-wrap faq-item">
+                            <div class="faq-content-title faq-question">
+                                <div class="plus-img">
+                                    <img src="assests/images/icons/plus.svg" alt="plus-icone">
+                                </div>
+                                <h2 class="faq-text">How do I update my email, password, or profile info?</h2>
+                            </div>
+                            <div class="faq-content faq-answer">
+                                <div class="richtext">
+                                    <p>
+                                        Absolutely! You can reach us via he chat widget in the bottom right corner, or
+                                        by
+                                        email.
+                                        Try team@memberstack.io. We're
+                                        happy to help!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-faq" id="Delivery">
+                        <h2 class="faq-tab-title">Orders & Delivery</h2>
+                        <div class="faq-wrap faq-item">
+                            <div class="faq-content-title faq-question">
+                                <div class="plus-img">
+                                    <img src="assests/images/icons/plus.svg" alt="plus-icone">
+                                </div>
+                                <h2 class="faq-text">How do I place an order?</h2>
+                            </div>
+                            <div class="faq-content faq-answer">
+                                <div class="richtext">
+                                    <p>
+                                        MemberStack charges a flat transaction fee of 10% on the Startup plan and 3% on
+                                        the
+                                        Pro
+                                        plan, and 1% on the Scale plan.
+                                        Stripe charges an additional credit card processing fee that depends on a few
+                                        different
+                                        factors. See Stripe's pricing
+                                        for more details.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-wrap faq-item">
+                            <div class="faq-content-title faq-question">
+                                <div class="plus-img">
+                                    <img src="assests/images/icons/plus.svg" alt="plus-icone">
+                                </div>
+                                <h2 class="faq-text">How long does delivery take?</h2>
+                            </div>
+                            <div class="faq-content faq-answer">
+                                <div class="richtext">
+                                    <p>
+                                        We’re working on a content management system that would make it possible to
+                                        store
+                                        anything securely on any website.
+                                        Although, it’ll be a few months before something like this is ready (01/2019).
+                                        Until
+                                        then, MemberStack protects pages
+                                        and content on those pages using redirects. They can't be "turned off" from a
+                                        browser,
+                                        but there are ways to access the
+                                        HTML of a page if you know what you're looking for, and what you're doing.
+                                        Therefor,
+                                        we
+                                        don't recommend using
+                                        MemberStack to protect highly sensitive information.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-wrap faq-item">
+                            <div class="faq-content-title faq-question">
+                                <div class="plus-img">
+                                    <img src="assests/images/icons/plus.svg" alt="plus-icone">
+                                </div>
+                                <h2 class="faq-text">How can I track my order?</h2>
+                            </div>
+                            <div class="faq-content faq-answer">
+                                <div class="richtext">
+                                    <p>
+                                        Pre-revenue companies, students, and other folks who can't (yet) afford the
+                                        $25/mo
+                                        fee.
+                                        We've been there, so we're happy
+                                        to work with you.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faq-wrap faq-item">
+                            <div class="faq-content-title faq-question">
+                                <div class="plus-img">
+                                    <img src="assests/images/icons/plus.svg" alt="plus-icone">
+                                </div>
+                                <h2 class="faq-text">Can I change or cancel my order after placing it?</h2>
+                            </div>
+                            <div class="faq-content faq-answer">
+                                <div class="richtext">
+                                    <p>
+                                        Absolutely! You can reach us via he chat widget in the bottom right corner, or
+                                        by
+                                        email.
+                                        Try team@memberstack.io. We're
+                                        happy to help!
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="faq-wrap faq-item">
-                    <div class="faq-content-title faq-question">
-                        <div class="plus-img">
-                            <img src="assests/images/icons/plus.svg" alt="plus-icone">
-                        </div>
-                        <h2 class="faq-text">What can I protect with MemberStack?</h2>
-                    </div>
-                    <div class="faq-content faq-answer">
-                        <div class="richtext">
-                            <p>
-                                We’re working on a content management system that would make it possible to store
-                                anything securely on any website.
-                                Although, it’ll be a few months before something like this is ready (01/2019). Until
-                                then, MemberStack protects pages
-                                and content on those pages using redirects. They can't be "turned off" from a browser,
-                                but there are ways to access the
-                                HTML of a page if you know what you're looking for, and what you're doing. Therefor, we
-                                don't recommend using
-                                MemberStack to protect highly sensitive information.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-wrap faq-item">
-                    <div class="faq-content-title faq-question">
-                        <div class="plus-img">
-                            <img src="assests/images/icons/plus.svg" alt="plus-icone">
-                        </div>
-                        <h2 class="faq-text">Who should apply for the Startup Plan?</h2>
-                    </div>
-                    <div class="faq-content faq-answer">
-                        <div class="richtext">
-                            <p>
-                                Pre-revenue companies, students, and other folks who can't (yet) afford the $25/mo fee.
-                                We've been there, so we're happy
-                                to work with you.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="faq-wrap faq-item">
-                    <div class="faq-content-title faq-question">
-                        <div class="plus-img">
-                            <img src="assests/images/icons/plus.svg" alt="plus-icone">
-                        </div>
-                        <h2 class="faq-text">Is there someone I can talk to about my project?</h2>
-                    </div>
-                    <div class="faq-content faq-answer">
-                        <div class="richtext">
-                            <p>
-                                Absolutely! You can reach us via he chat widget in the bottom right corner, or by email.
-                                Try team@memberstack.io. We're
-                                happy to help!
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <h2 id="noData">Not found</h2>
             </div>
         </div>
     </section>
