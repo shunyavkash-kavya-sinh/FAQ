@@ -190,15 +190,10 @@ input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
 }
 
-.faq-block form label {
-  cursor: pointer;
-}
-
 .input-search-box {
   display: flex;
   margin-inline: auto;
   align-items: center;
-  /* position: relative; */
   max-width: 500px;
 }
 
