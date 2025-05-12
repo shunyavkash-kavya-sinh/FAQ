@@ -30,7 +30,6 @@ body {
   flex-direction: column;
   width: 100%;
   gap: 30px;
-  padding: 50px;
 }
 
 .faq-tab-sec {
@@ -57,13 +56,13 @@ body {
 
 .faq-wrap {
   border: 1px solid #00000044;
-  padding: 20px;
+  padding: 30px;
   margin-bottom: 20px;
   border-radius: 20px;
 }
 
 .faq-content p {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
   margin-top: 10px;
