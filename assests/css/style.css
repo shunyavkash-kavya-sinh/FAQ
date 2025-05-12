@@ -143,7 +143,7 @@ input[type="search"]::-webkit-search-results-decoration {
   content: "";
   position: absolute;
   right: 10px;
-  background-image: url(../images/icons/search-page.svg);
+  background-image: url(../images/icons/search.svg);
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
