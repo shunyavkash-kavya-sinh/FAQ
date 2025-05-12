@@ -27,12 +27,6 @@ faqItems.forEach((item) => {
   });
 });
 
-function showSection(id) {
-  const sections = document.querySelectorAll(".tab-faq");
-  sections.forEach((sec) => sec.classList.remove("active-tab"));
-  document.getElementById(id).classList.add("active-tab");
-}
-
 const searchBar = document.getElementById("searchBar");
 const blogs = document.querySelectorAll(".faq-wrap");
 const noData = document.getElementById("noData");
